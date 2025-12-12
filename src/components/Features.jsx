@@ -8,7 +8,7 @@ const BentoTilt = ({ children, className = '' }) => {
   const handleMouseMove = (e) => {
     if(!itemRef.current) return;
 
-    const{ left, top, width, height } = itemRef.current.getBoundingClientRect()
+    const{ left, top, width, height } = itemRef.current.getBoundingClientRect()// Returns an object with information about the element’s size and position relative to the viewport.
 
     const relativeX = (e.clientX - left)/width;
     const relativeY = (e.clientY - top)/height;
